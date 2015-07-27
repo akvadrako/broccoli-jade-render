@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - "0.12"
+- '0.12'
+deploy:
+  provider: npm
+  email: dev@doubly.so
+  api_key:
+    secure: dvvy5GWMSWIoxJCurzDZUGYuxfV/5hR8nQMz0beIyo147/ZCPyIX8boWmtPqeKbnV6J2GTmBBEIJTjA79hBqdJ5KkAcPHAwSdKq3/ClTrGHmz00Y5k+xB21Kqd2QXILoliupNOphQGDZJbROEFhEpgGNTWriMycWY80eJe8kvTXFla+c8bNFmO9VmTm5dN7eDs1u4pPIqkFVrKJelbhC0OPjFnWRNmfwYYKavJlNVRmxPL4ldyLU087aTZGlBxDB/SYpX218NH1Ue7GW4RR+3zqgROHCU6Ub3ij4mAbFB2Xz4hSKzQ9XlQnmQHMRy8KDDcdPJeL1ZJN7PtBk4RcB3Pym8sNjsm0+4u1uW2nzDQqLzljxdz+kSON1xy4RuALXB7zwBGJOOat08UrK8W3Tm/zI5SLMmcwcVQp/OU9NL0s1QH0Ben2I3Yf2l42Nfjt1o5DQPrNBd7V42TylbmF23JuIF02hKQl40TFFJwWLVaPdeuvZZkPnXOmnFXw4+KtdBl5pcQQAXLmBKeeIH9z4ftQ64uOdbULW3b2+2a+gmsl+zWqy794728XAeAxof5jSGYbZQBpltL+iF5svl56W8hOW+Bd+BV7erjRXFzZWh7WW2XwXlLVoj6uY5Rej9TWXYL/GM+3Kc3wayD/B2Gldbpefnic6prZBX7XgngJHH2I=
+  on:
+    tags: true
+    repo: akvadrako/broccoli-jade-render
