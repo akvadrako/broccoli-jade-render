@@ -14,7 +14,7 @@
     "jade"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha -t 10000"
   },
   "dependencies": {
     "broccoli-plugin": "^1.0.0",
