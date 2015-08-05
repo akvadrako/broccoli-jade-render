@@ -1,4 +1,4 @@
-# broccoli-jade-render [![Build Status](https://travis-ci.org/akvadrako/broccoli-jade-render.svg?branch=master)](https://travis-ci.org/akvadrako/broccoli-jade-render)
+# broccoli-jade-render [![Build Status](https://travis-ci.org/akvadrako/broccoli-jade-render.svg?branch=master)](https://travis-ci.org/akvadrako/broccoli-jade-render) [![npm version](https://badge.fury.io/js/broccoli-jade-render.svg)](https://www.npmjs.com/package/broccoli-jade-render) [![npm downloads](https://img.shields.io/npm/dm/broccoli-jade-render.svg)](https://www.npmjs.com/package/broccoli-jade-render)
 
 A [broccoli.js](https://github.com/joliss/broccoli) plugin to render [Jade](https://github.com/visionmedia/jade) templates.
 
