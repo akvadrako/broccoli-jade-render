@@ -36,3 +36,4 @@ Filter.prototype.build = function (readTree, destDir) {
 }
 
 module.exports = Filter
+module.exports.jade = jade
