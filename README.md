@@ -1,18 +1,18 @@
-# broccoli-jade-render [![Build Status](https://travis-ci.org/akvadrako/broccoli-jade-render.svg?branch=master)](https://travis-ci.org/akvadrako/broccoli-jade-render) [![npm version](https://badge.fury.io/js/broccoli-jade-render.svg)](https://www.npmjs.com/package/broccoli-jade-render) [![npm downloads](https://img.shields.io/npm/dm/broccoli-jade-render.svg)](https://www.npmjs.com/package/broccoli-jade-render)
+# broccoli-pug-render [![Build Status](https://travis-ci.org/qm3ster/broccoli-pug-render.svg?branch=master)](https://travis-ci.org/qm3ster/broccoli-pug-render) [![npm version](https://badge.fury.io/js/broccoli-pug-render.svg)](https://www.npmjs.com/package/broccoli-pug-render) [![npm downloads](https://img.shields.io/npm/dm/broccoli-pug-render.svg)](https://www.npmjs.com/package/broccoli-pug-render)
 
-A [broccoli.js](https://github.com/joliss/broccoli) plugin to render [Jade](https://github.com/visionmedia/jade) templates.
+A [broccoli.js](https://github.com/joliss/broccoli) plugin to render [Pug](https://github.com/pugjs/pug) templates.
 
 ## Install
 
 ```
-$ npm install --save-dev broccoli-jade-render
+$ npm install --save-dev broccoli-pug-render
 ```
 
 ## Usage
 
 ```js
-var renderJade = require('broccoli-jade-render');
-var pages = new renderJade('src', {
+var renderPug = require('broccoli-pug-render');
+var pages = new renderPug('src', {
     basedir: __dirname + '/partials',
     localvar: 'value'
 });
@@ -20,12 +20,16 @@ var pages = new renderJade('src', {
 
 ## API
 
-### renderJade(tree, [options])
+### renderPug(tree, [options])
 
 #### options
 
-See the Jade [options](http://jade-lang.com/api/).
+See the Pug [options](http://pug-lang.com/api/).
 
 ## License
 
-MIT © [Devin Bayer](https://doubly.so)
+MIT © [qm3ster](https://github.com/qm3ster)
+
+## Credit
+
+Big thanks to [Devin Bayer](https://doubly.so) for creating [`broccoli-jade-render`](https://github.com/akvadrako/broccoli-jade-render)

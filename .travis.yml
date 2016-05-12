@@ -1,11 +1,15 @@
 language: node_js
 node_js:
 - '0.12'
+- '4'
+- '5'
+- '6'
 deploy:
   provider: npm
-  email: dev@doubly.so
+  email: mihail.malo@gmail.com
   api_key:
-    secure: dvvy5GWMSWIoxJCurzDZUGYuxfV/5hR8nQMz0beIyo147/ZCPyIX8boWmtPqeKbnV6J2GTmBBEIJTjA79hBqdJ5KkAcPHAwSdKq3/ClTrGHmz00Y5k+xB21Kqd2QXILoliupNOphQGDZJbROEFhEpgGNTWriMycWY80eJe8kvTXFla+c8bNFmO9VmTm5dN7eDs1u4pPIqkFVrKJelbhC0OPjFnWRNmfwYYKavJlNVRmxPL4ldyLU087aTZGlBxDB/SYpX218NH1Ue7GW4RR+3zqgROHCU6Ub3ij4mAbFB2Xz4hSKzQ9XlQnmQHMRy8KDDcdPJeL1ZJN7PtBk4RcB3Pym8sNjsm0+4u1uW2nzDQqLzljxdz+kSON1xy4RuALXB7zwBGJOOat08UrK8W3Tm/zI5SLMmcwcVQp/OU9NL0s1QH0Ben2I3Yf2l42Nfjt1o5DQPrNBd7V42TylbmF23JuIF02hKQl40TFFJwWLVaPdeuvZZkPnXOmnFXw4+KtdBl5pcQQAXLmBKeeIH9z4ftQ64uOdbULW3b2+2a+gmsl+zWqy794728XAeAxof5jSGYbZQBpltL+iF5svl56W8hOW+Bd+BV7erjRXFzZWh7WW2XwXlLVoj6uY5Rej9TWXYL/GM+3Kc3wayD/B2Gldbpefnic6prZBX7XgngJHH2I=
+    secure: TRJBMleg4J2+nXt2bk/Ncog9OPWRd7jMk+SfkUXVto2t2Wj5mNq6SPhu2+oPAi7DsLg3q5Nu5gTV5yFCZog2cNPw21HJ3jY6lKbi8VBVTc3d9w3f3MSXDp4tSETXoLQX2rDypQWcAQWGxTMPQYIZeGzs2vpoy67EkVTbb4jO/rGWBMCVj3km7RhTbXapmjw5+IUICJlLFHPdFZGQNtWsdzi23tF0Wi8Pt6WHVWod/c/a3Ixq8s+MmepfNbnG+QYz25pqhTxz/PrbmebiS4iFIJRDhFN6hRLKAcGwiSoH64+UXE6cOkHjyevDACesvQJ2Kbpy2raHDzDKMzHlYAHlOYQdf2qujV9I6Ddz8JYhdqzTBm8t9VwwUFMVDXVCE0+lytqbX9C6TDYSNr1JxDv8UgIhgeG4fybLgv8z2VyXOrgFHu5ZC4/I/VJmzOwPVhJiMOp4mEb4dlugfYl+eeuMG6i6DNDF/sGCWtHLsXzLSqxneF0mj1pjAc8UKasmvQoFtgoAiV4QWiclN46AbCScucqfb6b+Ydyf7qHS6cATMOjAl3G6wKThBckBSKZx3OufYFmiaswgYg7TwC88Q5NlrMK4Ldm0rgxXr2IG8lGBpKjcs5vlHcvCWfLZVFc51ad4Pq44b01Bn+dOyYWSlw7bGgxdU0/kln8YMaila5wfqTQ=
   on:
     tags: true
-    repo: akvadrako/broccoli-jade-render
+    branch: master
+    repo: qm3ster/broccoli-pug-render
