@@ -3,37 +3,39 @@ var path = require('path')
 var mkdirp = require('mkdirp')
 var Plugin = require('broccoli-plugin')
 var walkSync = require('walk-sync')
-var jade = require('jade');
+var pug = require('pug');
 var extend = require('extend');
 
-function Filter (inputNode, options) {
-    this.options = extend({}, options);
-    Plugin.call(this, [inputNode], this.options);
+function Filter(inputNode, options) {
+  this.options = extend({}, options);
+  Plugin.call(this, [inputNode], this.options);
 }
 
 Filter.prototype = Object.create(Plugin.prototype)
 
 Filter.prototype.build = function (readTree, destDir) {
-    var self = this
-    var srcDir = this.inputPaths[0]
-    var paths = walkSync(srcDir)
+  var self = this
+  var srcDir = this.inputPaths[0]
+  var paths = walkSync(srcDir)
 
-    for(var i = 0; i < paths.length; ++i) {
-        var filename = paths[i];
+  for (var i = 0; i < paths.length; ++i) {
+    var filename = paths[i];
 
-        if(filename.slice(-5) != '.jade' || filename.charAt(0) == '_') {
-            continue;
-        }
+    if (filename.slice(-4) != '.pug' || filename.charAt(0) == '_') {
+      continue;
+    }
 
-        var output = jade.renderFile(srcDir + '/' + filename,
-            extend({ basedir: srcDir }, this.options));
+    var output = pug.renderFile(srcDir + '/' + filename,
+      extend({
+        basedir: srcDir
+      }, this.options));
 
-        outputFilename = this.outputPath + '/' + filename.replace('.jade', '.html');
+    outputFilename = this.outputPath + '/' + filename.replace('.pug', '.html');
 
-        mkdirp(path.dirname(outputFilename));
-        fs.writeFileSync(outputFilename, output);
-    } 
+    mkdirp(path.dirname(outputFilename));
+    fs.writeFileSync(outputFilename, output);
+  }
 }
 
 module.exports = Filter
-module.exports.jade = jade
+module.exports.pug = pug

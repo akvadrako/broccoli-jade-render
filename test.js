@@ -5,21 +5,21 @@ var quickTemp = require('quick-temp')
 var assert = require('chai').assert
 var Builder = require('broccoli').Builder
 
-var renderJade = require('./index')
+var renderPug = require('./index')
 
-describe('unit tests', function() {
-  it('test1', function(done) {
+describe('unit tests', function () {
+  it('test1', function (done) {
     fixturify.writeSync(this.tempdir, {
-      'page.jade': 'page.jade contents',
+      'page.pug': 'page.pug contents',
     });
 
-    var builder = new Builder(new renderJade(this.tempdir));
+    var builder = new Builder(new renderPug(this.tempdir));
 
     builder.build()
       .then(function (hash) {
         var output = fixturify.readSync(hash.directory);
         assert.deepEqual(output, {
-          'page.html': '<page class="jade">contents</page>'
+          'page.html': '<page class="pug">contents</page>'
         });
       })
       .finally(function () {
@@ -28,11 +28,11 @@ describe('unit tests', function() {
       .then(done, done)
   })
 
-  beforeEach(function() {
+  beforeEach(function () {
     quickTemp.makeOrRemake(this, 'tempdir');
   });
 
-  after(function() {
+  after(function () {
     quickTemp.remove(this, 'tempdir');
   })
 })

@@ -1,25 +1,25 @@
 {
-  "name": "broccoli-jade-render",
-  "description": "Render Jade Templates",
-  "version": "1.0.2",
-  "author": "Devin Bayer <dev@doubly.so>",
+  "name": "broccoli-pug-render",
+  "description": "Render Pug Templates",
+  "version": "1.0.0",
+  "author": "Mihail Malo <qm3ster@gmail.com>",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akvadrako/broccoli-jade-render"
+    "url": "git+https://github.com/qm3ster/broccoli-pug-render.git"
   },
   "keywords": [
     "broccoli-plugin",
-    "jade"
+    "pug"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/mocha -t 10000"
+    "test": "mocha -t 10000"
   },
   "dependencies": {
     "broccoli-plugin": "^1.0.0",
     "extend": "^3.0.0",
-    "jade": "^1.11.0",
+    "pug": "^2.0.0-alpha7",
     "mkdirp": "^0.5.1",
     "walk-sync": "^0.1.3"
   },
@@ -29,5 +29,9 @@
     "fixturify": "^0.1.1",
     "mocha": "^2.2.5",
     "quick-temp": "^0.1.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/qm3ster/broccoli-pug-render/issues"
+  },
+  "homepage": "https://github.com/qm3ster/broccoli-pug-render#readme"
 }
